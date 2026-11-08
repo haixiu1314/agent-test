@@ -1,5 +1,0 @@
-{
-  "status": "blocked",
-  "reason": "LLM_* or EMBEDDING_MODEL missing",
-  "real_model_calls": 0
-}

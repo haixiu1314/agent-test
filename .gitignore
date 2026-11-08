@@ -11,3 +11,11 @@ frontend/dist/
 test-results/
 *.db
 .taste-skill/inspect/
+
+# 忽略文档文件夹
+docs/
+开发准备/
+
+# 忽略特定的 md 文档
+AgentTestLab*.md
+额外需求开发文档.md

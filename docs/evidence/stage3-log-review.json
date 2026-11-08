@@ -1,7 +1,0 @@
-{
-  "scope": "current backend process 29256",
-  "requests": 297,
-  "http_5xx": 0,
-  "database_or_internal_errors": 0,
-  "startup_complete": true
-}

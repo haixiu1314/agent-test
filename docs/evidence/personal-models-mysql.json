@@ -1,8 +1,0 @@
-{
-  "status": "passed",
-  "database": "agenttestlab",
-  "browser_model_rows_checked": 2,
-  "at_rest_encryption": "verified",
-  "ownership_persisted": true,
-  "provider": "local HTTP protocol fixture, NOT real AI"
-}

@@ -1,8 +1,0 @@
-{
-  "pid": 8244,
-  "scope": "Current dev session from startup marker",
-  "lines": 284,
-  "http_5xx": 0,
-  "unhandled_errors": 0,
-  "note": "INFO uvicorn.error is a logger name, not an error level"
-}

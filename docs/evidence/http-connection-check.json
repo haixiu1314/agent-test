@@ -1,1 +1,0 @@
-{"status": "passed", "checks": ["/chat", "/retry", "/timeout"], "real_http": true, "fixture_is_ai": false}
