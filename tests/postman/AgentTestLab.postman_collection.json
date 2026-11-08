@@ -1,0 +1,1854 @@
+{
+  "info": {
+    "name": "AgentTestLab 全接口目录 0007",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "health",
+      "item": [
+        {
+          "name": "GET /health/live",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/health/live",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /health/ready",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/health/ready",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "other",
+      "item": [
+        {
+          "name": "POST /api/v1/auth/register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/auth/register",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"填写有效值\",\n  \"password\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "POST /api/v1/auth/login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/auth/login",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"填写有效值\",\n  \"password\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/auth/me",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/auth/me",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/projects",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/projects",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/projects",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/projects",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/projects/{project_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/projects/{{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "PUT /api/v1/projects/{project_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/projects/{{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE /api/v1/projects/{project_id}",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/projects/{{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/agents",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/agents",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/agents/{agent_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents/{{agent_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "PUT /api/v1/agents/{agent_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents/{{agent_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE /api/v1/agents/{agent_id}",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents/{{agent_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/agents/{agent_id}/versions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents/{{agent_id}}/versions",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/agents/{agent_id}/test-connection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/agents/{{agent_id}}/test-connection",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/system/operation-logs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/system/operation-logs",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "test-cases",
+      "item": [
+        {
+          "name": "GET /api/v1/suites",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/suites",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "PUT /api/v1/suites/{suite_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites/{{suite_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE /api/v1/suites/{suite_id}",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites/{{suite_id}}?expected_revision={{expected_revision}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/suites/{suite_id}/versions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites/{{suite_id}}/versions",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/cases",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/cases?suite_id={{suite_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/cases",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/cases?expected_revision={{expected_revision}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"test_type\": \"functional\",\n  \"scenario\": \"填写有效值\",\n  \"user_input\": \"填写有效值\",\n  \"expected_behavior\": \"填写有效值\",\n  \"expected_result\": \"填写有效值\",\n  \"rules\": {\n    \"evaluators\": [\n      \"rules\"\n    ],\n    \"rubric\": \"填写有效值\"\n  },\n  \"suite_id\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "PUT /api/v1/cases/{case_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/cases/{{case_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"test_type\": \"functional\",\n  \"scenario\": \"填写有效值\",\n  \"user_input\": \"填写有效值\",\n  \"expected_behavior\": \"填写有效值\",\n  \"expected_result\": \"填写有效值\",\n  \"rules\": {\n    \"evaluators\": [\n      \"rules\"\n    ],\n    \"rubric\": \"填写有效值\"\n  },\n  \"expected_revision\": 1.0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE /api/v1/cases/{case_id}",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/cases/{{case_id}}?expected_revision={{expected_revision}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/suites/{suite_id}/import",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites/{{suite_id}}/import",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"format\": \"json\",\n  \"content\": \"填写有效值\",\n  \"expected_revision\": 1.0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/suites/{suite_id}/export",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/suites/{{suite_id}}/export",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "models-generation",
+      "item": [
+        {
+          "name": "GET /api/v1/models",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/models",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/models",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/models",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"base_url\": \"填写有效值\",\n  \"model\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "PUT /api/v1/models/{model_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/models/{{model_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"base_url\": \"填写有效值\",\n  \"model\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "POST /api/v1/models/test",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/models/test",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"base_url\": \"填写有效值\",\n  \"model\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/generation-runs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/generation-runs?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/generation-runs",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/generation-runs",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"requirements\": \"填写有效值\",\n  \"types\": [\n    \"functional\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/generation-runs/{run_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/generation-runs/{{run_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/generation-runs/{run_id}/save",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/generation-runs/{{run_id}}/save",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"suite_id\": \"填写有效值\",\n  \"expected_revision\": 1.0,\n  \"indexes\": [\n    1\n  ],\n  \"cases\": [\n    {\n      \"name\": \"填写有效值\",\n      \"test_type\": \"functional\",\n      \"scenario\": \"填写有效值\",\n      \"user_input\": \"填写有效值\",\n      \"expected_behavior\": \"填写有效值\",\n      \"expected_result\": \"填写有效值\",\n      \"rules\": null\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "demo",
+      "item": [
+        {
+          "name": "POST /api/v1/demo/chat",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/demo/chat",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"input\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/demo/runs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/demo/runs?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tasks-traces",
+      "item": [
+        {
+          "name": "POST /api/v1/test-tasks",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"agent_id\": \"填写有效值\",\n  \"suite_id\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/test-tasks",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/test-tasks/{task_id}/progress",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/progress",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/test-tasks/{task_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/test-tasks/{task_id}/start",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/start",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/test-tasks/{task_id}/pause",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/pause",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/test-tasks/{task_id}/cancel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/cancel",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/test-tasks/{task_id}/retry-failed",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/retry-failed",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/test-tasks/{task_id}/results",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/results",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/test-tasks/{task_id}/events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/test-tasks/{{task_id}}/events",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/traces",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/traces?task_id={{task_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/traces/{trace_id}/events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/traces/{{trace_id}}/events",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/traces/{trace_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/traces/{{trace_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/traces/{trace_id}/compare/{other_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/traces/{{trace_id}}/compare/{{other_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rag",
+      "item": [
+        {
+          "name": "POST /api/v1/rag/knowledge-bases",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/knowledge-bases",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "PUT /api/v1/rag/knowledge-bases/{kb_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"name\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE /api/v1/rag/knowledge-bases/{kb_id}",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/documents",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/documents",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"content_base64\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/knowledge-bases/{kb_id}/documents",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/documents",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/knowledge-bases/{kb_id}/documents/{doc_id}/chunks",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/documents/{{doc_id}}/chunks",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/documents/{doc_id}/index",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/documents/{{doc_id}}/index",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "DELETE /api/v1/rag/knowledge-bases/{kb_id}/documents/{doc_id}",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/documents/{{doc_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/retrieve",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/retrieve",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/quality-check",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/quality-check",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/knowledge-bases/{kb_id}/issues",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/issues",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "PUT /api/v1/rag/issues/{issue_id}/confirm",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/issues/{{issue_id}}/confirm?decision={{decision}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/datasets",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/datasets",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"questions\": [\n    {\n      \"question\": \"填写有效值\",\n      \"reference\": \"填写有效值\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/knowledge-bases/{kb_id}/datasets",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/datasets",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "PUT /api/v1/rag/knowledge-bases/{kb_id}/datasets/{dataset_id}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/datasets/{{dataset_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"questions\": [\n    {\n      \"question\": \"填写有效值\",\n      \"reference\": \"填写有效值\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/datasets/generate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/datasets/generate",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "POST /api/v1/rag/knowledge-bases/{kb_id}/evaluate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/evaluate",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/evaluations/{evaluation_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/evaluations/{{evaluation_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/rag/knowledge-bases/{kb_id}/evaluations",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/rag/knowledge-bases/{{kb_id}}/evaluations",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "security",
+      "item": [
+        {
+          "name": "GET /api/v1/security/categories",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/security/categories",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/security/generate-cases",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/security/generate-cases",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"project_id\": \"填写有效值\",\n  \"requirements\": \"填写有效值\",\n  \"types\": [\n    \"functional\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "POST /api/v1/security/tasks",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/security/tasks",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"填写有效值\",\n  \"agent_id\": \"填写有效值\",\n  \"suite_id\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/security/tasks/{task_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/security/tasks/{{task_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/security/findings",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/security/findings?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/security/findings/{finding_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/security/findings/{{finding_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "analysis-reports-regression",
+      "item": [
+        {
+          "name": "GET /api/v1/report-options",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/report-options",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/trace-analysis/{result_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/trace-analysis/{{result_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/dashboard",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/dashboard?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/reports",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/reports",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"task_id\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/reports",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/reports?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/reports/{report_id}/chart",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/reports/{{report_id}}/chart",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/reports/{report_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/reports/{{report_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/reports/{report_id}/export",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/reports/{{report_id}}/export",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "POST /api/v1/regressions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/regressions",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"baseline_id\": \"填写有效值\",\n  \"candidate_id\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/regressions",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/regressions?project_id={{project_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/regressions/{record_id}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/regressions/{{record_id}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    },
+    {
+      "name": "management",
+      "item": [
+        {
+          "name": "PUT /api/v1/auth/password",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/auth/password",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"password\": \"填写有效值\",\n  \"new_password\": \"填写有效值\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/admin/parameters",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/admin/parameters",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "PUT /api/v1/admin/parameters/{key}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/admin/parameters/{{key}}",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"value\": {}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/admin/tasks",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/admin/tasks",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/operation-logs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/operation-logs",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        },
+        {
+          "name": "GET /api/v1/admin/storage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/admin/storage",
+            "description": "由当前 OpenAPI 自动生成的接口目录。请求模板需按操作手册填写真实 ID 与字段；不是可无配置顺序运行的测试。"
+          }
+        }
+      ]
+    }
+  ]
+}

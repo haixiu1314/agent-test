@@ -1,0 +1,7 @@
+{
+  "source": "Observed scripts/verify_milvus.py output on 2026-11-02",
+  "status": "failed",
+  "error_type": "MilvusException",
+  "previous_environment_blocker": "Docker Desktop engine named pipe access denied",
+  "acceptance": "not_passed"
+}

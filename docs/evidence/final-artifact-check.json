@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "scope": "artifact structure, examples and recorded test evidence; no real AI or JMeter validation",
+  "checks": [
+    {
+      "asset": "全功能验收-基础用例.json",
+      "valid_cases": 2
+    },
+    {
+      "asset": "全功能验收-安全用例.json",
+      "valid_cases": 1
+    },
+    {
+      "openapi_operations": 96,
+      "postman_requests": 96,
+      "jmx": "valid XML, not executed"
+    },
+    {
+      "markdown_local_links": "all checked links exist"
+    },
+    {
+      "evidence": "final-pytest.xml",
+      "tests": 124,
+      "failures": 0
+    },
+    {
+      "evidence": "final-report-options-pytest.xml",
+      "tests": 14,
+      "failures": 0
+    },
+    {
+      "evidence": "personal-models-pytest.xml",
+      "tests": 132,
+      "failures": 0
+    },
+    {
+      "evidence": "user-polish-pytest.xml",
+      "tests": 133,
+      "failures": 0
+    },
+    {
+      "mysql_database": "agenttestlab",
+      "tables": 26,
+      "migration": "0007_delivery"
+    }
+  ]
+}

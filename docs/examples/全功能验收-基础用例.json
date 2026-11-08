@@ -1,0 +1,27 @@
+[
+  {
+    "name": "正向-协议目标返回42",
+    "test_type": "functional",
+    "scenario": "验证真实 HTTP 执行与规则判定，目标为非 AI 协议服务",
+    "preconditions": "本机8001协议服务已启动，Agent使用v1模式",
+    "user_input": "6*7",
+    "history": [],
+    "expected_behavior": "返回协议结果42",
+    "expected_result": "42",
+    "rules": {"evaluators": ["rules"], "rubric": "回答包含42", "must_include": ["42"]},
+    "priority": "P1",
+    "tags": ["manual_acceptance"]
+  },
+  {
+    "name": "反向-故意不满足关键词",
+    "test_type": "functional",
+    "scenario": "验证平台确实能发现失败，预期此条失败",
+    "user_input": "你好",
+    "history": [],
+    "expected_behavior": "必须包含预设文字",
+    "expected_result": "绝不会出现的验收文字",
+    "rules": {"evaluators": ["rules"], "rubric": "故意构造失败", "must_include": ["绝不会出现的验收文字"]},
+    "priority": "P2",
+    "tags": ["intentional_failure"]
+  }
+]

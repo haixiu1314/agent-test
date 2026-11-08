@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "count": 27,
+  "checks": [
+    "real_http_target_and_suite",
+    "baseline_passed",
+    "candidate_failed",
+    "same_case_version_regression",
+    "regression_persistence",
+    "regression_history",
+    "missing_dimensions_not_full_marks",
+    "actual_mapped_usage",
+    "evidence_based_diagnostics",
+    "report_snapshot_persistence",
+    "export_html",
+    "export_pdf",
+    "export_json",
+    "export_csv",
+    "real_pandas_matplotlib_chart",
+    "observable_tool_trace",
+    "real_dashboard_counts",
+    "forbidden_tool_evidence_violation",
+    "security_source_evidence",
+    "independent_high_risk_warning",
+    "ordinary_user_denied_admin",
+    "actual_storage_inventory",
+    "personal_profile",
+    "admin_all_tasks",
+    "operation_audit",
+    "mysql_encrypted_report_and_regression",
+    "final_migration"
+  ],
+  "target": "isolated real local HTTP protocol fixture; NOT AI",
+  "real_model_calls": 0,
+  "retained_test_username": "delivery_56c152d1a0ad",
+  "project_id": "3b0c33ed-8007-4266-b358-bc3bdc5816a5",
+  "report_id": "f1eecc70-0a42-4db2-8d3d-15e0e98a0225",
+  "result_id": "a984aef4-2beb-4ffd-b0d0-1f626a5677f0",
+  "storage": {
+    "mysql": {
+      "host": "127.0.0.1",
+      "port": 3307,
+      "database": "agenttestlab"
+    },
+    "milvus": {
+      "database": "default",
+      "collection": "rag_document_chunks",
+      "creation": "首次成功索引时创建；此接口不代表实际连通或已建集合",
+      "evaluation_collection": "未创建 rag_evaluation_vectors，评估不需要持久化额外向量"
+    }
+  }
+}

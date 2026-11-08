@@ -1,0 +1,15 @@
+{
+  "source": "Observed Playwright CLI run on 2026-11-02T15:07:32Z; summary transcribed from tool output",
+  "status": "passed",
+  "passed": 3,
+  "failed": 0,
+  "tests": [
+    "注册登录、项目管理、Agent 连接和版本快照",
+    "错误密码显示真实后端错误",
+    "第二阶段：用例增删改、导入、快照、未配置模型与响应式页面"
+  ],
+  "duration_seconds": 27.9,
+  "stage2_widths": [1440, 768, 390],
+  "stage2_browser_page_errors": 0,
+  "real_model_calls": 0
+}

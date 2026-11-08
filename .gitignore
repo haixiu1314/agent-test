@@ -1,0 +1,13 @@
+.venv/
+runtime-packages/
+.tools/
+.env
+.local/
+*.log
+__pycache__/
+.pytest_cache/
+node_modules/
+frontend/dist/
+test-results/
+*.db
+.taste-skill/inspect/

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "count": 15,
+  "checks": [
+    "mysql_version",
+    "migration",
+    "dedicated_account_grants",
+    "register",
+    "login",
+    "project_insert",
+    "agent_insert",
+    "connection",
+    "version_update",
+    "readiness",
+    "fresh_application_persistence",
+    "immutable_versions",
+    "no_secret_in_api",
+    "encrypted_storage",
+    "audit_persistence"
+  ],
+  "retained_test_username": "integration_7dab54e99928"
+}

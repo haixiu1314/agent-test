@@ -1,0 +1,27 @@
+
+> agenttestlab-frontend@0.1.0 build
+> vue-tsc --noEmit && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 1687 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                         0.38 kB │ gzip:   0.31 kB
+dist/assets/Tasks-B7aZ7QHt.css          0.76 kB │ gzip:   0.36 kB
+dist/assets/Knowledge-BlT_fIyB.css      1.50 kB │ gzip:   0.53 kB
+dist/assets/index-DvZ54eG-.css        360.16 kB │ gzip:  49.34 kB
+dist/assets/Tasks-V4X5HFF5.js          14.41 kB │ gzip:   4.89 kB
+dist/assets/Knowledge-IhKUvmMd.js      24.41 kB │ gzip:   8.23 kB
+dist/assets/index-BXj6kZyf.js       1,106.75 kB │ gzip: 367.07 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 4.84s
+npm notice
+npm notice New major version of npm available! 10.9.2 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

@@ -1,0 +1,14 @@
+{
+  "name": "agenttestlab",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:verify": "node scripts/dev.mjs --fixture",
+    "dev:fixture": ".venv\\Scripts\\python.exe scripts/run_module.py scripts/protocol_target.py",
+    "db:configure": ".venv\\Scripts\\python.exe scripts/run_module.py scripts/configure_database.py",
+    "db:migrate": ".venv\\Scripts\\python.exe scripts/run_module.py scripts/configure_database.py --migrate",
+    "build": "npm --prefix frontend run build"
+  },
+  "engines": { "node": ">=22.12.0" }
+}

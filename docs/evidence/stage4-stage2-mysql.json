@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "count": 11,
+  "checks": ["suite_insert", "mysql_row_lock_conflict", "json_round_trip", "csv_round_trip", "atomic_import_rollback", "immutable_suite_versions", "missing_model_audit", "fresh_app_persistence", "unicode_20000_char_persistence", "response_column_capacity", "database_snapshot_count"],
+  "real_model_test": "not_run_no_credentials",
+  "retained_test_username": "stage2_31cd33f5b802"
+}

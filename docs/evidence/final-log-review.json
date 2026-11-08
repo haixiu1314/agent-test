@@ -1,0 +1,9 @@
+{
+  "scope": "final backend process 13828",
+  "reviewed_at": "2026-11-04T18:49:12",
+  "lines": 284,
+  "http_5xx": 0,
+  "unhandled_errors": 0,
+  "startup_complete": true,
+  "note": "Expected negative 4xx checks are intentional; uvicorn.error is a logger name, INFO lines are not errors."
+}

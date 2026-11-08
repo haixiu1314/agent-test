@@ -1,0 +1,79 @@
+/* 选中值不截获指针，让关联 label 对应的 combobox 可以直接点击。 */
+.el-select__placeholder {
+  pointer-events: none;
+}
+/* 长配置表单在对话框内滚动，保存按钮不会扩展出屏幕。 */
+.el-dialog__body {
+  max-height: 75dvh;
+  overflow-y: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
+.case-toolbar {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.case-toolbar label {
+  margin: 0;
+  min-width: 180px;
+}
+.case-toolbar .el-select {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+}
+.json-view {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f3f5f7;
+  padding: 16px;
+  max-height: 420px;
+  overflow: auto;
+}
+.review-section {
+  margin-top: 24px;
+}
+.review-section article,
+.generation-record {
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e8ec;
+}
+details {
+  margin: 12px 0;
+}
+summary {
+  cursor: pointer;
+  padding: 6px 0;
+}
+.el-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.el-dialog {
+  max-width: calc(100vw - 24px);
+}
+@media (max-width: 640px) {
+  .case-toolbar {
+    align-items: stretch;
+  }
+  .case-toolbar label,
+  .case-toolbar .el-select {
+    width: 100%;
+  }
+  .case-toolbar label {
+    min-width: 0;
+  }
+  .section-toolbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

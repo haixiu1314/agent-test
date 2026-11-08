@@ -1,0 +1,43 @@
+{
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3307,
+    "database": "agenttestlab"
+  },
+  "current_database": "agenttestlab",
+  "migration": "0007_delivery",
+  "tables": [
+    "agent_versions",
+    "agents",
+    "alembic_version",
+    "demo_runs",
+    "evaluation_details",
+    "generation_runs",
+    "knowledge_bases",
+    "model_configs",
+    "operation_logs",
+    "projects",
+    "rag_chunks",
+    "rag_datasets",
+    "rag_documents",
+    "rag_evaluations",
+    "rag_issues",
+    "regression_records",
+    "reports",
+    "security_findings",
+    "system_parameters",
+    "test_cases",
+    "test_results",
+    "test_suite_versions",
+    "test_suites",
+    "test_tasks",
+    "trace_events",
+    "users"
+  ],
+  "milvus": {
+    "database": "default",
+    "collection": "rag_document_chunks",
+    "creation": "首次成功索引时创建；此接口不代表实际连通或已建集合",
+    "evaluation_collection": "未创建 rag_evaluation_vectors，评估不需要持久化额外向量"
+  }
+}

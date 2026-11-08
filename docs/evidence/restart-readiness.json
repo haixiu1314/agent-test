@@ -1,0 +1,4 @@
+{
+  "database": "ok",
+  "milvus": "请运行 scripts/verify_milvus.py 单独验证"
+}

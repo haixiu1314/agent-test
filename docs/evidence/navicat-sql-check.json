@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "tested_server": "127.0.0.1:3307",
+  "temporary_database_cleaned": true,
+  "schema_tables": 26,
+  "columns_and_foreign_keys": "match current models",
+  "revision": "0007_delivery",
+  "target_3306": "not executed: supplied account rejected with MySQL 1045"
+}
